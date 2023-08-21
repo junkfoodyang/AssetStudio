@@ -485,14 +485,14 @@ namespace AssetStudio
                     }
                     catch (Exception e)
                     {
-                        var sb = new StringBuilder();
-                        sb.AppendLine("Unable to load object")
-                            .AppendLine($"Assets {assetsFile.fileName}")
-                            .AppendLine($"Path {assetsFile.originalPath}")
-                            .AppendLine($"Type {objectReader.type}")
-                            .AppendLine($"PathID {objectInfo.m_PathID}")
-                            .Append(e);
-                        Logger.Error(sb.ToString());
+                        //var sb = new StringBuilder();
+                        //sb.AppendLine("Unable to load object")
+                        //    .AppendLine($"Assets {assetsFile.fileName}")
+                        //    .AppendLine($"Path {assetsFile.originalPath}")
+                        //    .AppendLine($"Type {objectReader.type}")
+                        //    .AppendLine($"PathID {objectInfo.m_PathID}")
+                        //    .Append(e);
+                        //Logger.Error(sb.ToString());
                     }
 
                     Progress.Report(++i, progressCount);
